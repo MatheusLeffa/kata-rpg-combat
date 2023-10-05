@@ -1,9 +1,7 @@
-# kata-rpg-combat
-Kata to practice OOP Java programming
-
-
 RPG Combat Kata
 ================
+Kata to practice OOP Java programming
+
 Source: [https://github.com/ardalis/kata-catalog](https://github.com/ardalis/kata-catalog)
 
 # Background #
