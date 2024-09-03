@@ -6,82 +6,83 @@ Source: [https://github.com/ardalis/kata-catalog](https://github.com/ardalis/kat
 
 # Background #
 
-This is a fun kata that has the programmer building simple combat rules, as for a role-playing game (RPG). It is implemented as a sequence of iterations. The domain doesn't include a map or any other character skills apart from their ability to damage and heal one another.
+Este é um kata divertido em que o programador constrói regras de combate simples, como em um RPG (RPG). É implementado como uma sequência de iterações. O domínio não inclui um mapa ou qualquer outra habilidade do personagem além de sua capacidade de causar danos e curar uns aos outros.
 
-# Instructions #
+# Instruções #
 
-1. Complete each iteration before reading the next one.
+1. Conclua cada iteração antes de ler a próxima.
 
-1. It's recommended you perform this kata with a pairing partner and while writing tests.
+1. É recomendado que você execute este kata com um parceiro e enquanto escreve testes.
 
-## Iteration One ##
+## Iteração 1 ##
 
-1. All Characters, when created, have:
-    - Health, starting at 1000
-    - Level, starting at 1
-    - May be Alive or Dead, starting Alive (Alive may be a true/false)
+1. Todos os Personagens, quando criados, possuem:
+    - Saúde, a partir de 1000
+    - Nível, começando em 1
+    - Pode estar Vivo ou Morto, começando Vivo (Vivo pode ser verdadeiro/falso)
 
-1. Characters can Deal Damage to Characters.
-    - Damage is subtracted from Health
-    - When damage received exceeds current Health, Health becomes 0 and the character dies
+1. Personagens podem causar danos aos personagens.
+    - O dano é subtraído da Saúde
+    - Quando o dano recebido excede a Saúde atual, a Saúde se torna 0 e o personagem morre
 
-1. A Character can Heal a Character.
-    - Dead characters cannot be healed
-    - Healing cannot raise health above 1000
+1. Um personagem pode curar um personagem.
+    - Personagens mortos não podem ser curados
+    - A cura não pode aumentar a saúde acima de 1000
 
-## Iteration Two ##
+## Iteração 2 ##
 
-1. A Character cannot Deal Damage to itself.
+1. Um personagem não pode causar dano a si mesmo.
 
-1. A Character can only Heal itself.
+1. Um personagem só pode curar a si mesmo.
 
-1. When dealing damage:
-    - If the target is 5 or more Levels above the attacker, Damage is reduced by 50%
-    - If the target is 5 or more Levels below the attacker, Damage is increased by 50%
+1. Ao causar dano:
+    - Se o alvo estiver 5 ou mais níveis acima do atacante, o dano é reduzido em 50%
+    - Se o alvo estiver 5 ou mais níveis abaixo do atacante, o dano aumenta em 50%
 
-## Iteration Three ##
+## Iteração 3 ##
 
-1. Characters have an attack Max Range.
+1. Os personagens têm um alcance máximo de ataque.
 
-1. *Melee* fighters have a range of 2 meters.
+1. Lutadores *corpo a corpo* têm um alcance de 2 metros.
 
-1. *Ranged* fighters have a range of 20 meters.
+1. Os caças de *alcance* têm um alcance de 20 metros.
 
-1. Characters must be in range to deal damage to a target.
+1. Os personagens devem estar dentro do alcance para causar dano a um alvo.
 
-## Retrospective ##
+## Retrospectiva ##
 
-- Are you keeping up with the requirements? Has any iteration been a big challenge?
-- Do you feel good about your design? Is it scalable and easily adapted to new requirements?
-- Is everything tested? Are you confident in your code?
+- Você está acompanhando os requisitos? Alguma iteração foi um grande desafio?
+- Você se sente bem com seu design? É escalável e facilmente adaptável a novos requisitos?
+- Está tudo testado? Você está confiante em seu código?
 
-## Iteration Four ##
 
-1. Characters may belong to one or more Factions.
-    - Newly created Characters belong to no Faction.
+## Iteração 4 ##
 
-1. A Character may Join or Leave one or more Factions.
+1. Os personagens podem pertencer a uma ou mais Facções.
+    - Personagens recém-criados não pertencem a nenhuma facção.
 
-1. Players belonging to the same Faction are considered Allies.
+1. Um personagem pode ingressar ou sair de uma ou mais facções.
 
-1. Allies cannot Deal Damage to one another.
+1. Jogadores pertencentes à mesma Facção são considerados Aliados.
 
-1. Allies can Heal one another.
+1. Os aliados não podem causar danos uns aos outros.
 
-## Iteration Five ##
+1. Aliados podem curar uns aos outros.
 
-1. Characters can damage non-character *things* (props).
-    - Anything that has Health may be a target
-    - These things cannot be Healed and they do not Deal Damage
-    - These things do not belong to Factions; they are neutral
-    - When reduced to 0 Health, things are *Destroyed*
-    - As an example, you may create a Tree with 2000 Health
+## Iteração 5 ##
 
-## Retrospective ##
+1. Os personagens podem danificar *coisas* (adereços) que não sejam do personagem.
+    - Qualquer coisa que tenha Saúde pode ser um alvo
+    - Essas coisas não podem ser curadas e não causam danos
+    - Essas coisas não pertencem a Facções; eles são neutros
+    - Quando reduzido a 0 de Vida, as coisas são *Destruídas*
+    - Por exemplo, você pode criar uma Árvore com 2.000 de Saúde
 
-- What problems did you encounter?
-- What have you learned? Any new technique or pattern?
-- Share your design with others, and get feedback on different approaches.
+## Retrospectiva ##
+
+- Que problemas você encontrou?
+- O que você aprendeu? Alguma nova técnica ou padrão?
+- Compartilhe seu design com outras pessoas e obtenha feedback sobre diferentes abordagens.
 
 # Resources #
 
